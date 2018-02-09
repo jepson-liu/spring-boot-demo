@@ -1,0 +1,8 @@
+server:
+  port: 8004
+  context-path: /integration
+spring:
+  redis:
+    host: 172.16.1.232
+  aop:
+    auto: true

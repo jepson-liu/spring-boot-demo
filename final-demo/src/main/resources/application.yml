@@ -1,0 +1,20 @@
+server:
+  port: 8008
+  context-path: /demo
+spring:
+  datasource:
+    druid:
+      username: test
+      password: test
+      url: jdbc:mysql://172.16.1.57:3306/test?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC
+      driver-class-name: com.mysql.jdbc.Driver
+      initial-size: 2
+      min-idle: 2
+      max-active: 20
+      web-stat-filter:
+        enabled: true
+      stat-view-servlet:
+        login-username: druid
+        login-password: druid
+mybatis:
+  config-location: classpath:mybatis/config/mybatis-config.xml
